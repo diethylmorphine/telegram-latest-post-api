@@ -1,0 +1,12 @@
+{
+  "name": "telegram-latest-post-api",
+  "version": "1.0.0",
+  "description": "API to fetch latest Telegram channel post",
+  "main": "api/telegram-latest.js",
+  "scripts": {
+    "dev": "vercel dev"
+  },
+  "keywords": ["telegram", "api", "vercel"],
+  "author": "diethylmorphine",
+  "license": "MIT"
+}
