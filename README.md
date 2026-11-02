@@ -1,6 +1,6 @@
 # Telegram Latest Post API
 
-Автоматическое получение последнего поста из Telegram канала для встраивания на сайт.
+Получает ID и ссылку на последний пост публичного Telegram-канала, разбирая HTML страницы `t.me/s/<channel>`.
 
 ## Endpoints
 
@@ -26,5 +26,8 @@
 
 ## Environment Variables (Optional)
 
-Для использования Bot API метода:
-- `TELEGRAM_BOT_TOKEN` - токен вашего Telegram бота
+`TELEGRAM_CHANNEL_USERNAME` — необязательное имя публичного канала без `@`. По умолчанию используется `iamdiethylmorphine`. Этот проект не вызывает Telegram Bot API и не требует токена бота.
+
+## Local checks
+
+Requires Node.js 20 or newer. Run `npm test`; tests mock the Telegram page request and need no credentials.
