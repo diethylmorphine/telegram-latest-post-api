@@ -2,9 +2,14 @@
   "name": "telegram-latest-post-api",
   "version": "1.0.0",
   "description": "API to fetch latest Telegram channel post",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
   "main": "api/telegram-latest.js",
   "scripts": {
-    "dev": "vercel dev"
+    "dev": "vercel dev",
+    "test": "node --test"
   },
   "keywords": ["telegram", "api", "vercel"],
   "author": "diethylmorphine",
